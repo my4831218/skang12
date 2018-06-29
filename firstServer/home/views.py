@@ -10,6 +10,7 @@ def keyboard(request) :
         "buttons" : ["선택 1", "선택 2", "선택 3"],
     }
 )
+@csrf_exempt
 def message(request) :
     message = ((request.body).decode('utf-8'))
     return_json_str = json.loads(message)
