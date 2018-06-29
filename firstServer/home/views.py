@@ -23,8 +23,8 @@ def message(request) :
     if return_str == 선택1:
         return JsonResponse(
             { #return 밑에는 공통어
-            "message": {
-                "text": "안녕하세요?"
+                "message": {
+                    "text": "안녕하세요?"
             }
         }
         )
