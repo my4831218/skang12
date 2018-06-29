@@ -51,5 +51,6 @@ def weather():
     params = {"version": "1", "city":"경기도", "county":"단원구","village":"초지동"}
     headers = {"appKey": "37a76141-3e16-46d4-a7b7-af72fe211ee2"}
     response = requests.get("https://api2.sktelecom.com/weather/current/minutely", params=params, headers=headers)
-    return response
+    data = json.loads(response.text)
+    return data
         
